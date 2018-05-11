@@ -1,7 +1,9 @@
+<!-- the form -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HTML 5 form</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/formChecks.js"></script>
@@ -25,18 +27,18 @@ $(document).ready(function(){
     <form action="thankyou.php" method="post"> <!--onsubmit="return errorMessage();">-->
 
       <label for="firstname">First name
-      <input type="text" name="firstname" id="firstName" required /></label>
+      <input type="text" name="firstname" id="firstname" required /></label>
       <div id="f_error_msg"></div>
 
       <label for="lastname">Last name
-      <input type="text" name="lastname" id="lastName" required></label>
+      <input type="text" name="lastname" id="lastname" required /></label>
       <!--<div id="l_error_msg"></div>-->
 
       <label for="email">Email
-      <input type="email" name="email" id="email" placeholder="me@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></label>
+      <input type="email" name="email" id="email" placeholder="me@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required /></label>
       <!--<div id="e_error_msg"></div>-->
 
-      <label for="email">Country
+      <label for="country">Country
       <select name="country" id="country">
           <option value="0" label="Select a country" selected="selected">Select a country</option>
           <option value="UK">United Kingdom</option>
@@ -44,19 +46,19 @@ $(document).ready(function(){
       </select></label>
 
       <label>Post code
-      <input type="text" name="postcode" id="postcode" onfocus="validatePostCode();" pattern=""></label>
+      <input type="text" name="postcode" id="postcode" onfocus="validatePostCode();" pattern="" /></label>
 
       <label>Username
-      <input type="text" name="username" required></label>
+      <input type="text" name="username" required /></label>
 
       <label>Password
-      <input type="password" name="password" id="password" required></label>
+      <input type="password" name="password" id="password" required /></label>
 
       <label>Confirm password
-      <input type="password" name="confirmPassword" id="confirmPassword" onkeyup="checkPasswordMatch();" required></label>
-
+      <input type="password" name="confirmPassword" id="confirmPassword" onkeyup="checkPasswordMatch();" required /></label>
       <span id="message"></span><br><br>
-      <input type="submit" value="Submit" id="submit">
+
+      <input type="submit" value="Submit" id="submit" />
     </form>
   </div>
 </div>

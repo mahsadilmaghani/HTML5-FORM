@@ -1,3 +1,4 @@
+<!-- thank you page -->
 <!DOCTYPE html>
 <html>
 <head>
