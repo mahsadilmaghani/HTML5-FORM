@@ -10,7 +10,7 @@ input[type=text], input[type=email], input[type=password], select {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+    /*resize: vertical; not used */
 }
 
 .required:before{
@@ -45,7 +45,7 @@ input[type=submit]:hover {
 }
 
 .innerContainer {
-  margin: 0 auto;
+  margin: 0 auto; /* horizontally center */
   width:50%;
 }
 
